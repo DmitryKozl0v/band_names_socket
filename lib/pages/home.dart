@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         elevation: 1.0,
         actions: <Widget>[
+          Center(child: Text('Server Status: ', style: TextStyle( color: Colors.black))),
           Container(
             margin: EdgeInsets.only(right: 10.0),
             child: socketService.serverStatus == ServerStatus.Online 
